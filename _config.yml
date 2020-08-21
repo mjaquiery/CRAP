@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Consortium for Research About Profanity
-email: your-email@example.com
+
 description: >- # this means to ignore newlines until "baseurl:"
   The international network promoting transparent and reproducible
   profanity-related research
@@ -52,7 +52,7 @@ social-network-links:
 # facebook: deanattali
   github: mjaquiery/CRAP
   twitter: CRAP_Project
-  rss: true
+  rss: false
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
