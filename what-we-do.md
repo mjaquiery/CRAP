@@ -33,6 +33,7 @@ In this way the experiments serve both the purpose of teaching developing resear
 
 Experimental design starts with the key manipulation, and ends with a set of materials and protocols which allow the study to be replicated exactly by different researchers.
 Experiment materials include things like lists of apparatus required, scripts for researchers to follow when talking to participants, questionnaires and forms for participants to complete, and lists of words for participants to say.
+Part of the _Consortium's_ role is to gather together translations of experiment materials so the same experiment can be performed in different countries.
 Experiment protocols are detailed instructions on how to conduct the experiment, and will explain how to set the experiment up, how to direct a participant through the experiment, which things to measure and when, how to store the data, and how to upload the data when finished. 
 Another important part of our work is making it as simple as possible for Research Ethics Committees to understand and approve the methods used in the experiments.
 
@@ -43,27 +44,13 @@ This approach also allows the different predictions of the different theories to
 ## Sharing data
 
 When data has been collected it is shared with members of the _Consortium_ and (if it is anonymous data we can share with the public) other researchers.
-This sharing means that 
+This sharing means that the small quantities of data collected by individual researchers during individual experiments can be brought together to answer important questions in reliable ways. 
+It also means that different teams can explore different ways to examine the data, and that the data can be used to investigate different questions from the ones it was collected to answer.
 
 ## Discussing interpretations
 
-Provide a platform for:
-* Discussing directions for research
-    * Outlining competing theories which can account for existing results
-    * Highlighting existing results in need of replication
-    * Determining critical tests of competing theories
-    * Arranging adversarial collaborations
-* Developing protocols/materials for running studies
-    * Designing experiments to implement critical tests
-        * Ideally suitable for small-n self-contained project 
-        * and extensible for meta-analysis/combined analysis.
-    * Simulating study data
-        * Power analysis
-        * What variables do we need to collect?
-    * Producing materials/protocols for conducting experiments
-* Sharing data/analysis/discussion
-    * Managing repositories of datasets of anonymized data
-    * Managing access to datasets with protected data
-    * Hosting analyses of shared datasets by different researchers
-    * Discussion of analyses and future research directions
+The last part of the _Consortium's_ role is discussing and disseminating the interpretations of the data collected in experiments.
+This involves explaining the results of the research to other researchers, the media, and members of the public.
+Finally, we all go back to the beginning and discuss new theories, or modifications to old theories, which can account for the results we've found in our research, and the whole process starts again.
+
 
