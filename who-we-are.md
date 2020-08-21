@@ -9,4 +9,3 @@ permalink: /who-we-are/
 * Richard Stephens (Cognitive and Biological psychologist)
 * Kim Dundas (Neuropsychologist)
 * Maddi Pownall (Social psychologist and Feminist philosopher)
-
