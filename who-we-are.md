@@ -5,8 +5,8 @@ permalink: /who-we-are/
 ---
 
 * Olly Robertson (Affective scientist, specialising in social and biological psychology)
-* Matt Jaquiery (Philosopher, software developer, and psychologist)
-* Richard Stephens (Cognitive and Biological Psychologist)
+* Matt Jaquiery (Philosopher, Software developer, and psychologist)
+* Richard Stephens (Cognitive and Biological psychologist)
 * Kim Dundas (Neuropsychologist)
-* Maddi Pownall (Social psychologist and Feminist Philosopher)
-* 
+* Maddi Pownall (Social psychologist and Feminist philosopher)
+
