@@ -11,5 +11,7 @@ We are also happy to hear from new or existing members who are interested in tak
 
 ## Contact details
 
-You can contact us:
+You can contact us:  
 * [by email](mailto:{{site.social-network-links.email}}?Subject=Website enquiry for the Consortium for Research About Profanity)
+* [on Twitter](https://twitter.com/{{site.social-network-links.twitter}})  
+* and you can visit the project's [github repository](https://github.com/{{site.social-network-links.github}}).
