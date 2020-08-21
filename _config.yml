@@ -21,6 +21,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Collections
+collections:
+  - projects
+
 # Build settings
 markdown: kramdown
 remote_theme: daattali/beautiful-jekyll@4.1.0
@@ -29,9 +33,11 @@ plugins:
 
 # Theme settings
 navbar-links:
-  Who we are: "who-we-are"
   What we do: "what-we-do"
+  Projects: "projects"
+  Resources: "resources"
   Get involved: "get-involved"
+  Members: "who-we-are"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
