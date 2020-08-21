@@ -8,5 +8,5 @@ permalink: /who-we-are/
 * Matt Jaquiery (Philosopher, software developer, and psychologist)
 * Richard Stephens (Cognitive and Biological Psychologist)
 * Kim Dundas (Neuropsychologist)
-* Maddi Pownall (Social psychologist and Feminist Philosopher)
+* Maddi Pownall (Social Psychologist and Feminist Philosopher)
 * 
