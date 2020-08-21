@@ -11,7 +11,7 @@ We have three main roles: [developing theory](#Developing theory), [designing ex
 Members of the _Consortium_ discuss competing theories which can explain scientific findings in profanity research. 
 These discussions can involve developing new theories, identifying existing results which are in need of replication, determining critical tests of competing theories, and arranging adversarial collaborations.
 
-The breadth and depth of knowledge represented by members of the _Consortium_ means that members can form small groups who can develop more complete theories than they might be able to alone. 
+The breadth and depth of knowledge represented by members of the _Consortium_, which span from neuroscience to linguistics, means that members can form small groups who can develop more complete theories than they might be able to alone. 
 
 The [replication crisis]() in science has highlighted the importance of having reliable data which we can use for constructing theories. 
 A key part of the theory development process is identifying existing results which may be unreliable and which would stop us from developing true theories if they were taken at face value. 
@@ -31,19 +31,13 @@ The experiments designed by the _Consortium_ will be simple enough to be conduct
 These studies will have a core kernal of overlapping data which can be combined by members of the _Consortium_ to explore the predictions made by the competing theories. 
 In this way the experiments serve both the purpose of teaching developing researchers and answering questions which are too difficult to answer with individual undergraduate research projects.
 
-Experimental design starts with the key manipulation, and ends with a set of materials and protocols which allow the study to be replicated exactly by different researchers.
-Experiment materials include things like lists of apparatus required, scripts for researchers to follow when talking to participants, questionnaires and forms for participants to complete, and lists of words for participants to say.
-Part of the _Consortium's_ role is to gather together translations of experiment materials so the same experiment can be performed in different countries.
-Experiment protocols are detailed instructions on how to conduct the experiment, and will explain how to set the experiment up, how to direct a participant through the experiment, which things to measure and when, how to store the data, and how to upload the data when finished. 
+In order to facilitate experimentation, the _Consortium_ will produce protocols and materials which are available to all members. 
+This may include things like simulating data to predict results in line with differing theories, writing code for experimental paradigms, and providing questionnaires and forms for participants to complete; making sure translations resources are available  so the same experiment can be performed in different countries.
 Another important part of our work is making it as simple as possible for Research Ethics Committees to understand and approve the methods used in the experiments.
-
-An important part of modern experimental design is using simulations to work out which things to measure and how many participants will be needed in order to answer a question. 
-The _Consortium_ has some members who are able to use these simulations to help with designing experiments.
-This approach also allows the different predictions of the different theories to be written down in mathematical or computer programming language so that they are clearly stated before the results are known.
 
 ## Sharing data
 
-When data has been collected it is shared with members of the _Consortium_ and (if it is anonymous data we can share with the public) other researchers.
+When data has been collected it is shared with members of the _Consortium_ and, where possible, other researchers in the wider scientific community.
 This sharing means that the small quantities of data collected by individual researchers during individual experiments can be brought together to answer important questions in reliable ways. 
 It also means that different teams can explore different ways to examine the data, and that the data can be used to investigate different questions from the ones it was collected to answer.
 
