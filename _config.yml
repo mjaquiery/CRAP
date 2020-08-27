@@ -33,6 +33,7 @@ plugins:
 
 # Theme settings
 navbar-links:
+  Home: "/"
   What we do: "what-we-do"
   Projects: "projects"
   Resources: "resources"
