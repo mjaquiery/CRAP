@@ -13,8 +13,8 @@ These discussions can involve developing new theories, identifying existing resu
 
 The breadth and depth of knowledge represented by members of the _Consortium_, which span from neuroscience to linguistics, means that members can form small groups who can develop more complete theories than they might be able to alone. 
 This is not to say that all members of the _Consortium_ will agree on how to best make sense of profanity related phenomena.
-However, by allowing researchers from different theoretical positions to work together, we aim to promote adversarial collaborations.
-[Adversarial collaborations]() allowing researchers with different commitments to agree on whether an experiment will be a good test of their theories before they run the experiments and get to see the results. 
+However, by facilitating collaborations between researchers from different theoretical positions, we aim to promote adversarial collaborations.
+[Adversarial collaborations]() allows researchers with different commitments to agree on whether an experiment will be a good test of their theories before they run the experiments and get to see the results. 
 We can then test any suggested theories repeatedly using the same experiments across multiple research sites, allowing for us to know whether our results reliably reflect reality or whether there were false positives and/or negatives skewing our previous understandings.
 
 
