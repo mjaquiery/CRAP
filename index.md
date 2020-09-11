@@ -4,7 +4,8 @@ layout: page
 
 # Welcome to the _Consortium for Research About Profanity_
 
-The _Consortium for Research About Profanity_ is a collection of researchers working on understanding the ways in which profanity functions in minds and societies. 
+The _Consortium for Research About Profanity_ is a collection of researchers working on understanding how profanity functions in minds, between people, and across societies.
+
 
 ## Why make a _Consortium_? 
 
