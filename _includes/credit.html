@@ -1,0 +1,160 @@
+{% assign projects = "" %}
+{% assign fields = "" %}
+{% for p in site.projects %}
+    {% for t in site.credit-tags %}
+        {% if p[t] contains include.person.ID %}
+            {% assign projects = projects | append: {{p.ID}} | append: "|" %}
+            {% assign fields = fields | append: {{t}} | append: "|" %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+{% assign projects = projects | split: "|" %}
+{% assign projects = projects | uniq %}
+{% assign fields = fields | split: "|" %}
+{% assign fields = fields | uniq %}
+<section class="credit">
+    {% if p | size > 0 %}
+    <table>
+        <thead>
+            <tr>
+                <th>Project</th>
+                {% for f in fields %}
+                    {% case f %}
+                    {% when "conceptualization" %}
+                    <th>
+                        <i class="fas fa-brain"></i>
+                        <div class="caption">
+                            <p><strong>Conceptualization</strong> – Ideas; formulation or evolution of overarching research goals and aims.</p>
+                        </div>
+                    </th>
+                    {% when "data" %}
+                    <th>
+                        <i class="fas fa-table"></i>
+                        <div class="caption">
+                            <p><strong>Data curation</strong> – Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use.</p>
+                        </div>
+                    </th>
+                    {% when "analysis" %}
+                    <th>
+                        <i class="fas fa-chart-bar"></i>
+                        <div class="caption">
+                            <p><strong>Formal analysis</strong> – Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.</p>
+                        </div>
+                    </th>
+                    {% when "funding" %}
+                    <th>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div class="caption">
+                            <p><strong>Funding acquisition</strong> – Acquisition of the financial support for the project leading to this publication.</p>
+                        </div>
+                    </th>
+                    {% when "investigation" %}
+                    <th>
+                        <i class="fas fa-search"></i>
+                        <div class="caption">
+                            <p><strong>Investigation</strong> – Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.</p>
+                        </div>
+                    </th>
+                    {% when "methodology" %}
+                    <th>
+                        <i class="fas fa-map"></i>
+                        <div class="caption">
+                            <p><strong>Methodology</strong> – Development or design of methodology; creation of models.</p>
+                        </div>
+                    </th>
+                    {% when "administration" %}
+                    <th>
+                        <i class="fas fa-users-cog"></i>
+                        <div class="caption">
+                            <p><strong>Project administration</strong> – Management and coordination responsibility for the research activity planning and execution.</p>
+                        </div>
+                    </th>
+                    {% when "resources" %}
+                    <th>
+                        <i class="fas fa-flask"></i>
+                        <div class="caption">
+                            <p><strong>Resources</strong> – Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.</p>
+                        </div>
+                    </th>
+                    {% when "software" %}
+                    <th>
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="caption">
+                            <p><strong>Software</strong> – Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.</p>
+                        </div>
+                    </th>
+                    {% when "supervision" %}
+                    <th>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="caption">
+                            <p><strong>Supervision</strong> – Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.</p>
+                        </div>
+                    </th>
+                    {% when "validation" %}
+                    <th>
+                        <i class="fas fa-check-double"></i>
+                        <div class="caption">
+                            <p><strong>Validation</strong> – Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.</p>
+                        </div>
+                    </th>
+                    {% when "visualization" %}
+                    <th>
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="caption">
+                            <p><strong>Visualization</strong> – Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.</p>
+                        </div>
+                    </th>
+                    {% when "writing" %}
+                    <th>
+                        <i class="fas fa-pen"></i>
+                        <div class="caption">
+                            <p><strong>Writing – original draft</strong> – ​Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).</p>
+                        </div>
+                    </th>
+                    {% when "review" %}
+                    <th>
+                        <i class="fas fa-highlighter"></i>
+                        <div class="caption">
+                            <p><strong>Writing – review</strong> – Critical review or commentary of the draft – including pre- or post-publication stages.</p>
+                        </div>
+                    </th>
+                    {% when "editing" %}
+                    <th>
+                        <i class="fas fa-edit"></i>
+                        <div class="caption">
+                            <p><strong>Writing – editing</strong> – Revision of the draft – including pre- or post-publication stages.</p>
+                        </div>
+                    </th>
+                    {% when "misc" %}
+                    <th>
+                        <i class="fas fa-question"></i>
+                        <div class="caption">
+                            <p><strong>Miscellaneous</strong> – otherwise uncategorised contributions.</p>
+                        </div>
+                    </th>
+                    {% endcase %}
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in projects %}
+            {% assign project = site.projects | where: "ID", p %}
+            {% assign project = project[0] %}
+            <tr>
+                <td>{{project.name}}</td>
+                {% for f in fields %}
+                <td>
+                    {% if project[f] contains include.person.ID %}
+                    Y
+                    {% else %}
+                    N
+                    {% endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    {% endif %}
+</section>
