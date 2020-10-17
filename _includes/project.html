@@ -1,7 +1,7 @@
-<article id="{{x.ID}}" class="project">
+<article id="{{include.project.ID}}" class="project">
     <header>
         <h2>
-            <a href="/what-we-do/#{{include.project.ID}}">
+            <a href="/projects/#{{include.project.ID}}">
                 <i class="fas fa-anchor permalink" tabindex="0" title="Permalink"></i>
             </a> {{include.project.name}}
         </h2>
@@ -10,5 +10,4 @@
         {{include.project.content}}
     </main>
     {% include credit.html project = include.project %}
-    </div>
 </article>

@@ -1,0 +1,6 @@
+article.project {
+  .permalink {
+    font-size: 1em;
+    &:not(:hover) {color: black;}
+  }
+}

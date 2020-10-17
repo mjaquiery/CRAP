@@ -1,0 +1,6 @@
+article.project .permalink {
+  font-size: 1em; }
+  article.project .permalink:not(:hover) {
+    color: black; }
+
+/*# sourceMappingURL=project.css.map */

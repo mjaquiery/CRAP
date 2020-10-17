@@ -1,25 +1,36 @@
-{% assign projects = "" %}
+{% assign rows = "" %}
 {% assign fields = "" %}
-{% for p in site.projects %}
+{% capture usingPerson %}{{include.person.ID}}{% endcapture %}
+{% if usingPerson == "" %}
     {% for t in site.credit-tags %}
-        {% if p[t] contains include.person.ID %}
-            {% assign projects = projects | append: {{p.ID}} | append: "|" %}
+        {% if include.project[t] %}
+            {% capture names %}{{include.project[t] | join: "|"}}{% endcapture %}
+            {% assign rows = rows | append: {{names}} | append: "|" %}
             {% assign fields = fields | append: {{t}} | append: "|" %}
         {% endif %}
     {% endfor %}
-{% endfor %}
-{% assign projects = projects | split: "|" %}
-{% assign projects = projects | uniq %}
+{% else %}
+    {% for p in site.projects %}
+        {% for t in site.credit-tags %}
+            {% if p[t] contains include.person.ID %}
+                {% assign rows = rows | append: {{p.ID}} | append: "|" %}
+                {% assign fields = fields | append: {{t}} | append: "|" %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+{% assign rows = rows | split: "|" %}
+{% assign rows = rows | uniq %}
 {% assign fields = fields | split: "|" %}
 {% assign fields = fields | uniq %}
 <section class="credit">
     <section class="credit-wrapper">
-        {% assign projectCount = projects | size %}
-        {% if projectCount > 0 %}
+        {% assign rowCount = rows | size %}
+        {% if rowCount > 0 %}
         <table>
             <thead>
                 <tr>
-                    <th>Project</th>
+                    <th>{% if usingPerson == "" %}Person{% else %}Project{% endif %}</th>
                     {% for f in fields %}
                         {% case f %}
                         {% when "conceptualization" %}
@@ -139,14 +150,25 @@
                 </tr>
             </thead>
             <tbody>
-                {% for p in projects %}
-                {% assign project = site.projects | where: "ID", p %}
-                {% assign project = project[0] %}
+                {% for p in rows %}
+                {% if usingPerson == "" %}
+                    {% assign project = include.project %}
+                    {% assign person = site.people | where: "ID", p %}
+                    {% assign person = person[0] %}
+                {% else %}
+                    {% assign person = include.person %}
+                    {% assign project = site.projects | where: "ID", p %}
+                    {% assign project = project[0] %}
+                {% endif %}
                 <tr>
-                    <td><a href="/what-we-do/#{{project.ID}}" title="{{project.content | strip_html | truncateWords: 100}}">{{project.name}}</a></td>
+                    {% if usingPerson == "" %}
+                    <td><a href="/who-we-are/#{{person.ID}}" title="{{person.content | strip_html | truncateWords: 100}}">{{person.name}}</a></td>
+                    {% else %}
+                    <td><a href="/projects/#{{project.ID}}" title="{{project.content | strip_html | truncateWords: 100}}">{{project.name}}</a></td>
+                    {% endif %}
                     {% for f in fields %}
                     <td>
-                        {% if project[f] contains include.person.ID %}
+                        {% if project[f] contains person.ID %}
                         <i class="fas fa-check contributor"></i>
                         {% else %}
                         &nbsp;

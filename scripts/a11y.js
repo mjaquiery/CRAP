@@ -8,8 +8,12 @@ function hashModal() {
     // Navigate to the # location if there is one
     if(window.location.hash) {
         const e = document.querySelector(window.location.hash);
-        if(e)
-            e.classList.add('modal');
+        if(e) {
+            if(e.classList.contains('person')) {
+                demodalize();
+                e.classList.add('modal');
+            }
+        }
     }
 }
 

@@ -57,6 +57,9 @@ article.person {
     justify-content: space-evenly;
     align-items: center;
   }
+  .wrapper > main {
+    display: block;
+  }
   .contact {
     display: flex;
     flex-direction: column;

@@ -9,6 +9,7 @@
                 <img src="{{ x.img | default: '/img/people/no-one.svg' }}" alt="Headshot"/>
                 <figcaption>{{x.name}}</figcaption>
             </figure>
+            {% if x.orcid or x.github or x.twitter or x.email or x.website %}
             <section class="contact">
                 {% if x.orcid %}
                 <div class="contact-icon">
@@ -51,6 +52,7 @@
                 </div>
                 {% endif %}
             </section>
+            {% endif %}
         </header>
         <i class="far fa-times-circle close" tabindex="0" title="Close"></i>
         <main>
