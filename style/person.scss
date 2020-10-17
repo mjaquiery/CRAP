@@ -1,8 +1,8 @@
 article.person {
-  &:not(.modal) > *:not(.summary) {
+  &:not(.modal) .wrapper > *:not(.summary) {
     display: none;
   }
-  &:not(.modal) > .summary > :not(figure) {
+  &:not(.modal) .wrapper > .summary > :not(figure) {
     display: none;
   }
   &.modal {
@@ -19,15 +19,19 @@ article.person {
     overflow: visible;
     flex-direction: column;
   }
-  &.modal > .close {
+  &.modal > .wrapper > .close {
     display: block;
     position: absolute;
     right: 1em;
     top: 1em;
     width: 1em;
   }
-  > * {
+  .wrapper {
     width: 90%;
+    height: 90%;
+  }
+  .wrapper > * {
+    width: 100%;
     max-width: 1000px;
     display: flex;
     justify-content: space-evenly;
