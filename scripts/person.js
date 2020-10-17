@@ -17,7 +17,9 @@ function modalize(event) {
     // remove modal from others
     demodalize();
 
-    event.currentTarget.classList.add('modal');
+    // Only open the modal if we're clicking on something other than the border.
+    if(event.currentTarget != event.target)
+        event.currentTarget.classList.add('modal');
 }
 
 // add modalize click events

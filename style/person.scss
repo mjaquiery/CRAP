@@ -1,34 +1,54 @@
+section.contributors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 article.person {
-  &:not(.modal) .wrapper > *:not(.summary) {
+  &:not(.modal) .wrapper > :not(.summary) {
     display: none;
   }
   &:not(.modal) .wrapper > .summary > :not(figure) {
     display: none;
   }
+  &:not(.modal) figure {cursor: pointer;}
   &.modal {
     display: flex;
     position: fixed;
-    width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(209, 209, 209);
+    background-color: rgba(209, 209, 209, .5);
     top: 0;
     left: 0;
-    height: 100%;
     z-index: 10000;
-    margin: auto;
-    padding: 10%;
     overflow: visible;
-    flex-direction: column;
   }
   &.modal > .wrapper > .close {
     display: block;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: .5em;
+    top: .5em;
     width: 1em;
+    cursor: pointer;
+  }
+  &.modal > .wrapper .permalink {
+    display: block;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    font-size: 1.5em;
+    &:not(:hover) {color: black}
   }
   .wrapper {
+    background-color: white;
+    padding: .5em 2em;
+    margin: auto;
+    position: relative;
+  }
+  &.modal > .wrapper {
     width: 90%;
     height: 90%;
+    border-radius: 1em 0 0 1em;
+    box-shadow: -2px 2px 4px -3px black;
+    overflow-y: auto;
   }
   .wrapper > * {
     width: 100%;
@@ -40,14 +60,34 @@ article.person {
   .contact {
     display: flex;
     flex-direction: column;
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      a {
+        display: inline-flex;
+        align-items: center;
+        & > :not(span) {color: black;}
+        span {
+          margin-left: .3em;
+          display: none;
+          @media screen and (min-width: 500px) {
+            display: inline;
+          }
+        }
+      }
+    }
   }
   figure {
     border: 1px solid black;
     padding: .5em;
     background-color: white;
-  }
-  figcaption {
+    height: 11em;
+    width: 11em;
     text-align: center;
-    padding-top: .25em;
+    img {height: 10em; max-width: 10em;}
+    figcaption {
+      text-align: center;
+      padding-top: .25em;
+    }
   }
 }

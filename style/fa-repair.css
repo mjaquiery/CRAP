@@ -1,0 +1,2 @@
+/* repair academicons overwriting fontawesome style */
+.fa-stack.fa-lg {line-height: 2em;}

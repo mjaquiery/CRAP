@@ -1,35 +1,61 @@
 {% assign x = include.person %}
 <article id="{{x.ID}}" class="person">
     <div class="wrapper">
-        <i class="far fa-times-circle close" tabindex="0" title="Close"></i>
+        <a href="/who-we-are/#{{x.ID}}">
+            <i class="fas fa-anchor permalink" tabindex="0" title="Permalink"></i>
+        </a>
         <header class="summary">
-            <figure class="headshot">
-                <img src="/img/people/{{x.ID}}.jpg" alt="Headshot"/>
+            <figure class="headshot" tabindex="0">
+                <img src="{{ x.img | default: '/img/people/no-one.svg' }}" alt="Headshot"/>
                 <figcaption>{{x.name}}</figcaption>
             </figure>
             <section class="contact">
                 {% if x.orcid %}
-                <a href="https://orcid.org/{{ x.orcid }}" title="orcid: {{ x.orcid }}"><i class="ai ai-orcid-square ai-2x"></i> {{x.orcid}}</a>
+                <div class="contact-icon">
+                    <a href="https://orcid.org/{{ x.orcid }}" title="orcid: {{ x.orcid }}">
+                        <i class="ai ai-orcid-square ai-2x"></i>
+                        <span>{{x.orcid}}</span>
+                    </a>
+                </div>
                 {% endif %}
                 {% if x.github %}
-                <a href="https://github.com/{{ x.github }}" title="github: {{ x.github }}"><i class="fab fa-github-square fa-2x"></i> {{x.github}}</a>
+                <div class="contact-icon">
+                    <a href="https://github.com/{{ x.github }}" title="github: {{ x.github }}">
+                        <i class="fab fa-github-square fa-2x"></i>
+                        <span>{{x.github}}</span>
+                    </a>
+                </div>
                 {% endif %}
                 {% if x.twitter %}
-                <a href="https://twitter.com/{{ x.twitter }}" title="twitter: {{ x.twitter }}"><i class="fab fa-twitter-square fa-2x"></i> {{x.twitter}}</a>
+                <div class="contact-icon">
+                    <a href="https://twitter.com/{{ x.twitter }}" title="twitter: {{ x.twitter }}">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <span>{{x.twitter}}</span>
+                    </a>
+                </div>
                 {% endif %}
                 {% if x.email %}
-                <a href="mailto:{{ x.email }}" title="email: {{ x.email }}"><i class="fas fa-envelope-square fa-2x"></i> {{x.email}}</a>
+                <div class="contact-icon">
+                    <a href="mailto:{{ x.email }}" title="email: {{ x.email }}">
+                        <i class="fas fa-envelope-square fa-2x"></i>
+                        <span>{{x.email}}</span>
+                    </a>
+                </div>
                 {% endif %}
                 {% if x.website %}
-                <a href="{{ x.website }}" title="website: {{ x.website }}"><i class="fas fa-external-link-square-alt fa-2x"></i> {{x.website}}</a>
+                <div class="contact-icon">
+                    <a href="{{ x.website }}" title="website: {{ x.website }}">
+                        <i class="fas fa-external-link-square-alt fa-2x"></i>
+                        <span>{{x.website}}</span>
+                    </a>
+                </div>
                 {% endif %}
             </section>
         </header>
+        <i class="far fa-times-circle close" tabindex="0" title="Close"></i>
         <main>
             {{x.content}}
         </main>
-        <footer>
-            {% include credit.html person = x %}
-        </footer>
+        {% include credit.html person = x %}
     </div>
 </article>

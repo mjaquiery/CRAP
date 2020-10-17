@@ -1,17 +1,31 @@
-section.credit table {
+section.credit.credit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative; }
-section.credit .caption {
-  visibility: hidden;
-  position: absolute;
-  text-align: center;
-  width: fit-content;
-  max-width: 33%;
-  transform: translate(-50%, -100%);
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 1em;
-  top: 0; }
-section.credit th:hover > .caption {
-  visibility: visible; }
+  section.credit.credit .credit-wrapper {
+    overflow-x: auto; }
+  section.credit.credit .caption {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    background-color: white;
+    top: 0;
+    left: 0;
+    border-top: 1px solid grey; }
+  section.credit.credit th:hover > .caption, section.credit.credit th:focus > .caption {
+    visibility: visible; }
+  section.credit.credit tr > :first-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+    border-left: none; }
+  section.credit.credit tr {
+    background-color: white; }
+  section.credit.credit .contributor {
+    color: #26d382; }
 
 /*# sourceMappingURL=credit.css.map */

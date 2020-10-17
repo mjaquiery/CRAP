@@ -1,6 +1,7 @@
 ---
 ID: matt-jaquiery
 name: Matt Jaquiery
+img: /img/people/matt-jaquiery.jpg
 institution: University of Oxford, UK
 # links
 orcid: 0000-0003-3599-1580

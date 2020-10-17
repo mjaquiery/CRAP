@@ -1,6 +1,7 @@
 ---
 ID: olly-robertson
 name: Olly Robertson
+img: /img/people/olly-robertson.jpg
 institution: 
 # links
 orcid: 
