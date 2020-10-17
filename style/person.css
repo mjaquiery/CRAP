@@ -39,8 +39,8 @@ article.person .wrapper {
   margin: auto;
   position: relative; }
 article.person.modal > .wrapper {
-  width: 90%;
-  height: 90%;
+  max-width: 90%;
+  max-height: 90%;
   border-radius: 1em 0 0 1em;
   box-shadow: -2px 2px 4px -3px black;
   overflow-y: auto; }
