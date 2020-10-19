@@ -2,13 +2,13 @@
 ID: olly-robertson
 name: Olly Robertson
 img: /img/people/olly-robertson.png
-institution: 
+institution: University of Oxford & Keele University
 # links
 orcid: 
 github: 
-twitter: 
+twitter: @psychollygy
 email: 
-website: 
+website: www.psychollygy.com
 ---
 
 Olly is one of two founding members of the Consortium for Research About Profanity, along with [Matt Jaquiery](/who-we-are/#matt-jaquiery). Olly is a PhD candidate at Keele University and a postdoctoral researcher at the University of Oxford. She studies the psychology of emotion.
