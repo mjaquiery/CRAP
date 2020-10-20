@@ -6,7 +6,7 @@ institution: University of Oxford & Keele University
 # links
 orcid: 
 github: 
-twitter: @psychollygy
+twitter: psychollygy
 email: 
 website: www.psychollygy.com
 ---
