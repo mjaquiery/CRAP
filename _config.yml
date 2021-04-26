@@ -32,6 +32,7 @@ site-css:
 collections:
   - projects
   - people
+  - outputs
 
 credit-tags: [conceptualization, data, analysis, funding, investigation, methodology, administration, resources, software, supervision, validation, visualization, writing, review, editing, misc]
 
@@ -46,7 +47,7 @@ navbar-links:
   Home: "/"
   What we do: "what-we-do"
   Projects: "projects"
-  Resources: "resources"
+  Resources & Outputs: "resources"
   Get involved: "get-involved"
   Members: "who-we-are"
 
